@@ -73,10 +73,10 @@ while game_on:
                 player.respawn()
                 lives_scoreboard.update_lives(player.lives)
 
-        # check for player collision with end zone
-        if player.ycor() > 163:
-            points_scoreboard.update_score()
-            player.respawn()
+    # check for player collision with end zone
+    if player.ycor() > 163:
+        points_scoreboard.update_score()
+        player.respawn()
 
 
 screen.exitonclick()
