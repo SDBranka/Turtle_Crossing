@@ -46,21 +46,25 @@ screen.onkeypress(player.go_down, "Down")
 # main game cycle
 game_on = True
 while game_on:
-
     screen.update()
+    # control update framerate
     time.sleep(0.01)
 
+    # move each car
     for i, car in enumerate(cars):
         car.move()
-        # if car is out of screen, eliminate 
+        # if car is off of screen, eliminate 
         #   it and create a new car
         if car.xcor() < -333:
             cars.pop(i)
             new_car = Car()
             cars.append(new_car)
+
         # check for collision with player
         if car.distance(player.xcor() + 10, player.ycor()) < 30:
+            # test statement
             # print("Turtle hit car")
+
             player.lives -= 1
             if player.lives <= 0:
                 points_scoreboard.game_over("Game Over")

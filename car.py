@@ -4,6 +4,7 @@ import turtle as t
 
 t.colormode(255)
 
+
 def random_color():
     r = random.randint(0, 255)
     g = random.randint(0, 255)
@@ -29,6 +30,8 @@ class Car(t.Turtle):
     def move(self):
         self.forward(self.dx)
 
+
+    # archived method for testing vehicles at uniform speed
     # def move_cars(self, cars_list):
     #     for i, car in enumerate(cars_list):
     #         car.move()
@@ -36,4 +39,3 @@ class Car(t.Turtle):
     #             cars_list.pop(i)
     #             new_car = Car()
     #             cars_list.append(new_car)
-

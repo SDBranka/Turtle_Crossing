@@ -1,5 +1,6 @@
 import turtle as t
 
+
 END_ZONE_START_X = 306
 END_ZONE_START_Y = 171
 START_ZONE_START_X = 306
@@ -12,6 +13,7 @@ class Zone(t.Turtle):
         self.color("limegreen")
         self.setheading(180)
         self.position = position
+
 
     def draw_zone(self):
         self.penup()
