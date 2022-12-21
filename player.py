@@ -1,5 +1,6 @@
 import turtle as t
 
+
 class Player(t.Turtle):
     def __init__(self):
         super().__init__()
@@ -37,6 +38,7 @@ class Player(t.Turtle):
         if self.heading() != 270:
             self.setheading(270)
         self.forward(self.dy)
+
 
     def respawn(self):
         self.goto(x = 0, y = -270)
