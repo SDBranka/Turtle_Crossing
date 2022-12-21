@@ -9,8 +9,8 @@
 ---
 
 <p float="center">
-    <img src="https://github.com/SDBranka/Snake_Game_v2/blob/main/Resources/Chasing_Food_screenshot.png" width=45% alt="game start image"/>
-    <img src="https://github.com/SDBranka/Snake_Game_v2/blob/main/Resources/Chasing_Food_screenshot.png" width=45% alt="game end  image"/>
+    <img src="https://github.com/SDBranka/Turtle__Crossing/blob/main/Resources/Game_Start_screenshot.png" width=45% alt="game start image"/>
+    <img src="https://github.com/SDBranka/Turtle__Crossing/blob/main/Resources/Game_Over_screenshot.png" width=45% alt="game end  image"/>
 </p>
 
 ## Description
