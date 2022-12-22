@@ -1,4 +1,3 @@
-import random
 import time
 import turtle as t
 from car import Car
@@ -53,13 +52,12 @@ while game_on:
     # move each car
     for i, car in enumerate(cars):
         car.move()
-        # if car is off of screen, eliminate 
+        # if car moves off of screen, eliminate 
         #   it and create a new car
         if car.xcor() < -333:
             cars.pop(i)
             new_car = Car()
             cars.append(new_car)
-
         # check for collision with player
         if car.distance(player.xcor() + 10, player.ycor()) < 30:
             # test statement
